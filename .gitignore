@@ -1,3 +1,29 @@
+# dependencies
 **/node_modules/
-**/experiment/
+
+# secrets
 *.env
+.env.*
+!.env.example
+
+# private notes and scratch work
+yumeniwa.md
+**/experiment/
+
+# wiki: only the built PDF is published, not the Typst source
+yumeniwa/docs/**/*.typ
+
+# build output, logs, coverage
+dist/
+build/
+coverage/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# editor and OS files
+.vscode/
+.idea/
+*.local
+.DS_Store
+Thumbs.db
